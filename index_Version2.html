@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personas Desaparecidas — México vs Ecuador</title>
+  <style>
+    body {
+      margin: 0;
+      background: #9678c8;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    /* Ajusta el canvas para que no quede pegado */
+    .canvas-wrap {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: rgba(255,255,255,0.9);
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="canvas-wrap">
+      <!-- p5 colocará el canvas aquí -->
+      <div id="sketch-holder"></div>
+    </div>
+    <footer>Haz clic en "MÉXICO" o "ECUADOR" para mostrar/ocultar la barra.</footer>
+  </div>
+
+  <!-- p5.js desde CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
